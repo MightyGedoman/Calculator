@@ -1,15 +1,23 @@
 let num1 = null;
 let num2 = null;
 let sum = null;
-let screen = document.querySelector('.screen')
-let number = document.querySelectorAll('.number')
-let divide = document.querySelector('./')
-let time = document.querySelector('.x')
-let add = document.querySelector('.+')
-let subtract = document.querySelector('.-')
-let equal = document.querySelector('.=')
+let screen = document.querySelector('screen')
+let numbers = document.querySelectorAll('.number')
+let divide = document.querySelector('divide')
+let time = document.querySelector('time')
+let add = document.querySelector('add')
+let subtract = document.querySelector('minus')
+let equal = document.querySelector('equal')
 
-function add(num1, num2) {
+numbers.forEach((number) => {
+    number.addEventListener('click', () => {
+        console.log(number)
+    })
+})
+
+
+
+/* function add(num1, num2) {
     sum = num1 + num2
     return sum
 }
@@ -27,7 +35,7 @@ function times(num1, num2) {
 function divide(num1, num2) {
     sum = num1 / num2
     return sum
-}
+} */
 
 function operator() {
     
